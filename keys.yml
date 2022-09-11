@@ -1,7 +1,7 @@
 - name: Restore SSH keys
   hosts: localhost
   vars:
-    dir: './ssh'
+    dir: '~/.ssh'
     public_key: !vault | 
               $ANSIBLE_VAULT;1.1;AES256
               31303434366436383537343662653162336666393164653130383233326539393237363632646433
